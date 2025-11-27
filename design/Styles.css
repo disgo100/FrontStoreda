@@ -1,0 +1,70 @@
+
+/* medidas */
+/*- Mobile: 375px
+- Desktop: 1440px*/
+ *, *:before, *:after { 
+ box-sizing: inherit; 
+ box-sizing: border-box;/* para que el padding y border no afecten al width y height */
+}
+/* globale */
+:root {
+  --white: hsl(0, 0%, 100%);
+  --clr_slate_300: hsl(212, 45%, 89%);
+  --clr_slate_500: hsl(216, 15%, 48%);
+  --clr_slate_900: hsl(218, 44%, 22%);
+}
+
+body{
+    font-size: 15px;
+    font-family: 'Outfit', sans-serif;
+    
+  
+}
+
+h2 {
+    font-weight: 700;
+}
+
+p {
+    font-weight: 400;
+    color: var(--clr_slate_500);
+    line-height: 1.5;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--clr_slate_300);
+  }
+/* @media (min-width: 375px) {} */
+
+.card {
+    background-color: var(--white);
+    width: auto;
+    max-width: 350px;
+    border-radius: 1.5rem;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    
+}
+
+.card-content {
+    padding: 1rem;
+    text-align: center;
+ }
+
+ .card-image img {
+    width: 100%;
+    border-radius: 1rem;
+    
+ }
+
+/* footer */
+.attribution { 
+    font-size: 11px; text-align: center;
+ }
+ 
+.attribution a {
+     color: hsl(228, 45%, 44%);
+ } 
